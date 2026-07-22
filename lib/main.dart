@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'screens/home_screen.dart';
 import 'services/storage_service.dart';
@@ -95,6 +96,14 @@ class RuqyahApp extends StatelessWidget {
       // فرض العربية كلغة وحيدة للتطبيق (لا حاجة لدعم لغات أخرى)
       locale: const Locale('ar'),
       supportedLocales: const [Locale('ar')],
+      localizationsDelegates: const [
+        // مطلوبة كي تعمل عناصر الواجهة القياسية (كمربعات الحوار
+        // showDialog) بشكل صحيح مع اللغة العربية بدل التعطل بخطأ
+        // "Null check operator used on a null value".
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
 
       builder: (context, child) {
         // ضمان اتجاه RTL في كل الشاشة بغض النظر عن اللغة الافتراضية للجهاز
