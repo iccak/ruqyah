@@ -1,0 +1,9 @@
+# هذا الملف يُنشأ عادة تلقائيًا بواسطة أدوات Flutter.
+# عند البناء محليًا: انسخه إلى local.properties وحدّث المسار أدناه
+# ليشير إلى مكان تثبيت Flutter SDK على جهازك.
+# عند البناء عبر GitHub Actions (انظر .github/workflows/build_apk.yml)
+# يتم إنشاء هذا الملف تلقائيًا ولا حاجة لتعديله يدويًا.
+
+flutter.sdk=/path/to/flutter
+flutter.versionCode=1
+flutter.versionName=1.0.0
