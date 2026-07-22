@@ -57,7 +57,7 @@ class AppTheme {
           ),
         ),
       ),
-      cardTheme: CardThemeData(
+      cardTheme: CardTheme(
         color: cardColor,
         elevation: 2,
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
