@@ -12,7 +12,7 @@ Future<void> initAudioService() async {
       androidNotificationChannelId: 'com.ruqyah.app.audio',
       androidNotificationChannelName: 'تشغيل الرقية الشرعية',
       androidNotificationOngoing: true,
-      androidStopForegroundOnPause: false,
+      androidStopForegroundOnPause: true,
       androidNotificationIcon: 'mipmap/ic_launcher',
     ),
   );
