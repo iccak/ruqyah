@@ -94,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
       children: [
         const AppHeader(
           title: 'رقيتي',
-          subtitle: 'اقرأ ورقِ نفسك بكل هدوء',
+          subtitle: 'إستمع ورقِ نفسك بكل هدوء',
         ),
         Expanded(
           child: RefreshIndicator(
@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   controller: _searchController,
                   textDirection: TextDirection.rtl,
                   decoration: const InputDecoration(
-                    hintText: 'ابحث في السور والآيات...',
+                    hintText: 'ابحث في الرقى...',
                     suffixIcon: Padding(
                       padding: EdgeInsets.only(left: 12),
                       child: Icon(Icons.search, color: AppTheme.primaryGreen),
